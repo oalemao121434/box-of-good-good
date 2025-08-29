@@ -2,7 +2,7 @@
 
 // Configurações do banco
 $host    = "localhost";   // normalmente não precisa alterar
-$usuario = "natanael";        // substituir se seu usuário não for root
+$usuario = "root";        // substituir se seu usuário não for root
 $senha   = "";            // substituir se você tiver senha no MySQL
 $banco   = "mural";       // substituir pelo nome do seu banco criado no phpMyAdmin
 
