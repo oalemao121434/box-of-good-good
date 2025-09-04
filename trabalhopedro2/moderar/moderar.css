@@ -1,0 +1,238 @@
+/* Moderar.css - Estilo moderno para a página de moderação */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#geral {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+#header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#formulario_mural {
+    padding: 20px;
+    background: #f9f9f9;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#formulario_mural form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario_mural label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#formulario_mural label i {
+    margin-right: 8px;
+    color: #ff6b6b;
+}
+
+#formulario_mural input[type="text"],
+#formulario_mural textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#formulario_mural input[type="text"]:focus,
+#formulario_mural textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+#formulario_mural textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+    transform: translateY(-2px);
+}
+
+.recados {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.recados:hover {
+    transform: translateY(-2px);
+}
+
+.recados li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.recados li:last-child {
+    border-bottom: none;
+}
+
+.recados strong {
+    color: #ff6b6b;
+}
+
+.recados strong i {
+    margin-right: 5px;
+}
+
+.recados a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.recados a i {
+    margin-right: 5px;
+}
+
+.recados a:hover {
+    color: #ee5a24;
+    text-decoration: underline;
+}
+
+#footer {
+    background: #f5f7fa;
+    padding: 10px;
+    text-align: center;
+    color: #777;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    #main {
+        padding: 10px;
+    }
+
+    #geral {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    #header {
+        padding: 15px;
+    }
+
+    #header h1 {
+        font-size: 2em;
+    }
+
+    #formulario_mural {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #formulario_mural input[type="text"],
+    #formulario_mural textarea {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .recados {
+        padding: 15px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header h1 {
+        font-size: 1.8em;
+    }
+
+    #formulario_mural input[type="text"],
+    #formulario_mural textarea {
+        font-size: 1.1em;
+        padding: 14px;
+    }
+
+    .btn {
+        padding: 14px 24px;
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+    .recados {
+        padding: 10px;
+        margin: 10px;
+    }
+}
